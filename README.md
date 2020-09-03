@@ -14,25 +14,33 @@ Booking start date along with its end date, night and their permits.
 
 ## File Description
 
-### file1.csv
+### file1.py
 
 I have used the csv module to read and write the contents from the dataset csv file named DNR_Camping_Parks_Reservation_Data_2016.csv to file1.csv respectively. 
 To create the csv file from extracting all the data from dataset, I have used the functions ‘csv.writer’ and ‘csv.reader’ to write and read data respectively. 
 As I am dealing with csv files, naturally the delimiter used is comma (,).
 
-### file2.csv
+Output file: file1.csv
+
+### file2.py
 
 Here I have removed the unnecessary columns and extracted data on ParkName, State, PartySize, BookingType, RateType and Equipment.
 
-### file3.csv
+Output file: file2.csv
+
+### file3.py
 
 Scanned the "Equipment" column, and replaced all “less than” with “LT” [e.g. less than 30 ft. after transforming LT30ft]. Similarly, replaced all “Single tent” with “ST”.
 I have used the regex module to perform this substitutions. To find and replace these words, I have used the ‘.sub’ function. I have replaced and substituted both the 
 words consecutively rather than simultaneously to make the code simpler.
 
-### file4.csv
+Output file: file3.csv
+
+### file4.py
 
 This file has only the 20 unique parks in Nova Scotia which have the maximum number of "partySize".
+
+Output file: file4.csv
 
 ## Visualization using Neo4j
 
